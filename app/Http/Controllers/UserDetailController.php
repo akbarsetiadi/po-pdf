@@ -29,7 +29,7 @@ class UserDetailController extends Controller
     }
 
     public function downloadPDF($id){
-      $user = UserDetail::find($id);
+      // $user = UserDetail::find($id);
 
       $pdf = PDF::loadView('pdf', compact('user'));
       // return view('pdf', compact('user'));
